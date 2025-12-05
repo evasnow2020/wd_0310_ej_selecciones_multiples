@@ -10,13 +10,13 @@
       x.ready(iniciar);
       function iniciar() {
         var x;
-        x = $("*");  // Changed from $("h1#cambio") to ALL elements
+        x = $("*");  
         x.click(cambiar);
       }
-      function cambiar(event) {  // Added event parameter
-        event.stopPropagation();  // Prevent bubbling
+      function cambiar(event) {  
+        event.stopPropagation(); 
         var x;
-        x = $(this);  // Changed from $("h1#cambio") to clicked element
+        x = $(this);  
         x.css("background-color", "yellow");
         $("*").off("click");  // Disable all future clicks
       }
