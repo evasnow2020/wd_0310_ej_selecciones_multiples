@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Document</title>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script>
+      var x;
+      x = $(document);
+      x.ready(iniciar);
+      function iniciar() {
+        var x;
+        x = $("h1#cambio");
+        x.click(cambiar);
+        x = $("li:fir");
+      }
+      function cambiar() {
+        var x;
+        x = $("h1#cambio");
+        x.css("background-color", "yellow");
+      }
+    </script>
+  </head>
+  <body>
+    <p id="cambio">Yo soy un parrafo</p>
+    <p>Yo soy un parrafo</p>
+    <h1 id="cambio">Yo soy un titulo</h1>
+    <h1>Yo soy un titulo</h1>
+    <ul>
+      <li>Elemento 1</li>
+      <li>Elemento 2</li>
+      <li>Elemento 3</li>
+      <li>Elemento 4</li>
+      <li>Elemento 5</li>
+    </ul>
+  </body>
+</html>
